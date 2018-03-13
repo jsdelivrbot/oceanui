@@ -1,0 +1,240 @@
+*
+  padding: 0
+  margin: 0
+
+button:focus
+  outline: none
+
+\:root
+  /* Defining color variables
+  --blue: #1D7CFF
+  --black: #222222
+  --lightgrey: #F4F4F4
+  --grey: #D0D0D0
+  --white: #FFFFFF
+  /* Defining font variables
+  --primary-font: 'Roboto', sans-serif
+  --secondary-font: 'Open sans', sans-serif
+  --primary-weight: 400
+  --secondary-weight: 500
+  /* Defining button variables
+  --button-padding: 10px
+  --button-radius: 4px
+  /* Defining default button variables
+  --button-default-small-size: 11px
+  --button-default-size: 13px
+  --button-default-large-size: 15px
+  --button-default-border: 1px solid var(--grey)
+  --button-default-border-hover: 1px solid var(--blue)
+  --default-button-opacity-hover: .9
+  /* Defining default button variables
+  --button-primary-small-size: 11px
+  --button-primary-size: 13px
+  --button-primary-large-size: 15px
+  /* Defining transition variables
+  --default-transition: .1s ease-out 0s
+  /* Defining nav variables
+  --navbar-horizontal-height: 70px
+  --navbar-horizontal-width: 100vw
+  --navbar-item-hover-opacity: 0.9
+
+/* Horizontal navbar
+
+.navbar-primary-horizontal
+  width: var(--navbar-horizontal-width)
+  height: var(--navbar-horizontal-height)
+  background: var(--blue)
+
+.navbar-default-horizontal
+  width: var(--navbar-horizontal-width)
+  height: var(--navbar-horizontal-height)
+  background: var(--white)
+
+.navbar-horizontal-list
+  flex-direction: row
+  height: 100%
+  max-width: 1300px
+  padding-left: 50px
+  padding-right: 50px
+  list-style-type: none
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: flex-end
+  margin: 0 auto
+  color: var(--white) !important
+
+.navbar-primary-list-item
+  font-family: var(--primary-font)
+  margin-left: 25px
+
+.text-link-horizontal-primary
+  color: var(--white)
+  text-decoration: none
+  font-family: var(--primary-font)
+  font-weight: var(--primary-weight)
+  &:hover
+    opacity: var(--navbar-item-hover-opacity)
+    transition: var(--default-transition)
+
+.text-link-horizontal-default
+  color: var(--blue)
+  text-decoration: none
+  font-family: var(--primary-font)
+  font-weight: var(--primary-weight)
+  &:hover
+    opacity: var(--navbar-item-hover-opacity)
+    transition: var(--default-transition)
+
+/* Text-styles
+
+.text-link
+  color: var(--blue)
+  text-decoration: none
+  font-family: var(--primary-font)
+  font-weight: var(--primary-weight)
+  font-size: 1em
+  transition: var(--default-transition)
+  &:hover
+    opacity: .75
+    transition: var(--default-transition)
+
+/* Wrappers, rows, and columns
+
+.page-wrapper
+  max-width: 1300px
+  padding: 50px
+  margin: 0 auto
+
+.row
+  width: 100%
+  display: block
+  display: flex
+  flex-direction: row
+  margin-top: 50px
+
+.col-24
+  width: 100%
+  display: block
+
+.col-12
+  width: 50%
+  display: block
+  background: #f4f4f4
+
+/* Defining font classes
+
+.primary-font
+  font-family: var(--primary-font)
+  color: var(--black)
+  font-weight: var(--primary-weight)
+
+.secondary-font
+  font-family: var(--secondary-font)
+  color: var(--black)
+  font-weight: var(--secondary-weight)
+
+.primary-font-secondary-weight
+  font-family: var(--primary-font)
+  color: var(--black)
+  font-weight: var(--secondary-weight)
+
+.secondary-font-primary-weight
+  font-family: var(--secondary-font)
+  color: var(--black)
+  font-weight: var(--primary-weight)
+
+/* Buttons
+
+/* Button primary
+
+.button-primary-large
+  color: var(--white)
+  padding: var(--button-padding)
+  font-size: var(--button-primary-large-size)
+  border-radius: var(--button-radius)
+  background: var(--blue)
+  border: none
+  cursor: pointer
+  transition: var(--default-transition)
+
+.button-primary
+  color: var(--white)
+  padding: var(--button-padding)
+  font-size: var(--button-primary-size)
+  border-radius: var(--button-radius)
+  background: var(--blue)
+  border: none
+  cursor: pointer
+  transition: var(--default-transition)
+
+.button-primary-small
+  color: var(--white)
+  padding: var(--button-padding)
+  font-size: var(--button-primary-small-size)
+  border-radius: var(--button-radius)
+  background: var(--blue)
+  border: none
+  cursor: pointer
+  transition: var(--default-transition)
+
+.button-primary:hover, .button-primary-large:hover, .button-primary-small:hover
+  opacity: var(--default-button-opacity-hover)
+  -webkit-transition: var(--default-transition)
+  -o-transition: var(--default-transition)
+  transition: var(--default-transition)
+
+/* Button default
+
+.button-default-large
+  color: var(--black)
+  padding: var(--button-padding)
+  font-size: var(--button-default-large-size)
+  border-radius: var(--button-radius)
+  background: none
+  border: var(--button-default-border)
+  cursor: pointer
+  transition: var(--default-transition)
+
+.button-default
+  color: var(--black)
+  padding: var(--button-padding)
+  font-size: var(--button-default-size)
+  border-radius: var(--button-radius)
+  background: none
+  border: var(--button-default-border)
+  cursor: pointer
+  transition: var(--default-transition)
+
+.button-default-small
+  color: var(--black)
+  padding: var(--button-padding)
+  font-size: var(--button-default-small-size)
+  border-radius: var(--button-radius)
+  background: none
+  border: var(--button-default-border)
+  cursor: pointer
+  transition: var(--default-transition)
+
+.button-default:hover, .button-default-large:hover, .button-default-small:hover
+  color: var(--blue)
+  -webkit-transition: var(--default-transition)
+  -o-transition: var(--default-transition)
+  transition: var(--default-transition)
+  border: var(--button-default-border-hover)
+
+/* Tables, cards
+
+.table
+  border: 1px solid var(--grey)
+  border-radius: 4px
+
+.table-header, .table-content
+  padding: 15px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.table-seperator
+  height: 1px
+  background: var(--grey)
